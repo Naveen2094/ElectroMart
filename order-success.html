@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Order Placed | ElectroMart</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">⚡ Electro<span>Mart</span></div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+  </nav>
+</header>
+
+<section class="order-success">
+  <div class="success-card">
+    <div class="success-icon">✅</div>
+
+    <h1>Order Placed Successfully!</h1>
+    <p>Thank you for shopping with ElectroMart.</p>
+
+    <div class="order-details">
+      <p><strong>Order ID:</strong> <span id="order-id"></span></p>
+      <p><strong>Payment Method:</strong> Cash on Delivery</p>
+    </div>
+
+    <div class="success-actions">
+      <a href="index.html" class="hero-btn">Go to Home</a>
+      <a href="products.html" class="hero-btn outline">Continue Shopping</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>© 2025 ElectroMart. All rights reserved.</p>
+</footer>
+
+<script>
+  // ✅ Generate simple order ID
+  document.getElementById("order-id").innerText =
+    "EM" + Math.floor(100000 + Math.random() * 900000);
+
+  // ✅ Clear cart after successful order
+  localStorage.removeItem("cart");
+</script>
+
+</body>
+</html>
