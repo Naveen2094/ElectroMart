@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Samsung Products | ElectroMart</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">⚡ Electro<span>Mart</span></div>
+  <nav>
+    <a href="../index.html">Home</a>
+    <a href="../products.html">Products</a>
+    <a href="../cart.html">Cart</a>
+  </nav>
+</header>
+
+<section class="products">
+  <h2 class="section-title">Samsung <span>Products</span></h2>
+
+  <div class="product-grid">
+
+    <div class="product-card">
+      <img src="../images/samsungs23.webp">
+      <h3>Samsung Galaxy S23</h3>
+      <p class="price">₹74,999</p>
+      <div class="qty-control">
+  <button class="qty-btn" onclick="changeQty(this, -1)">−</button>
+  <span class="qty-value">1</span>
+  <button class="qty-btn" onclick="changeQty(this, 1)">+</button>
+</div>
+
+      <button class="add-cart" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="../images/samsung-book3pro.jpg">
+      <h3>Samsung Galaxy Book 3</h3>
+      <p class="price">₹89,999</p>
+      <div class="qty-control">
+  <button class="qty-btn" onclick="changeQty(this, -1)">−</button>
+  <span class="qty-value">1</span>
+  <button class="qty-btn" onclick="changeQty(this, 1)">+</button>
+</div>
+
+      <button class="add-cart" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+
+    <!-- Add 2–3 more -->
+  </div>
+</section>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
