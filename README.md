@@ -21,15 +21,15 @@ ElectroMart is a modern electronics e-commerce web application designed for a se
 
 | Home Page | Products Page |
 |----------|---------------|
-| ![Home Page](./images/home.png) | ![Products Page](./images/products.png) |
+| ![Home Page](./img/home.png) | ![Products Page](./img/products.png) |
 
 | Cart Page | Checkout Page |
 |----------|---------------|
-| ![Cart Page](./images/cart.png) | ![Checkout Page](./images/checkout.png) |
+| ![Cart Page](./img/cart.png) | ![Checkout Page](./img/checkout.png) |
 
 | Order Success Page |
 |--------------------|
-| ![Order Success](./images/order-success.png) |
+| ![Order Success](./img/order-success.png) |
 
 
 ## 💻 Tech Stack
