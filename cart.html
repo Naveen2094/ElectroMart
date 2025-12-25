@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cart | ElectroMart</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- 🔥 NAVBAR -->
+  <header class="navbar">
+    <div class="logo">⚡ Electro<span>Mart</span></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="cart.html">Cart <span id="cart-count">0</span></a>
+
+    </nav>
+  </header>
+
+  <!-- 🛒 CART SECTION -->
+  <section class="cart">
+    <h2 class="section-title">Your <span>Cart</span></h2>
+
+    <div id="cart-items"></div>
+
+    <div class="cart-summary">
+  <h3>Total: ₹<span id="total-price">0</span></h3>
+
+  <div class="cart-actions">
+    <button id="clear-cart">Clear Cart</button>
+    <a href="checkout.html" class="hero-btn">Proceed to Checkout</a>
+  </div>
+</div>
+
+  </section>
+
+  <script src="js/cart.js"></script>
+</body>
+</html>
