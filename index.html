@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ElectroMart | Electronics Store</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- 🔥 NAVBAR -->
+  <header class="navbar">
+    <div class="logo">⚡ Electro<span>Mart</span></div>
+    <nav>
+      <a href="index.html">Home</a>
+<a href="products.html">Products</a>
+<a href="cart.html">Cart <span id="cart-count">0</span></a>
+
+
+
+    </nav>
+  </header>
+
+
+  <!-- 🌌 HERO SECTION -->
+  <section class="hero">
+  <div class="hero-left">
+    <h1>Upgrade Your <span>Tech Life</span></h1>
+    <p>Shop the latest mobiles, laptops, and gadgets at unbeatable prices.</p>
+
+    <div class="hero-actions">
+      <a href="products.html" class="hero-btn">Shop Now</a>
+      <a href="products.html" class="hero-btn outline">View Deals</a>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="hero-glow"></div>
+  </div>
+</section>
+
+<section class="categories">
+  <h2 class="section-title">Shop by <span>Category</span></h2>
+
+  <div class="category-grid">
+    <div class="category-card">📱 Mobiles</div>
+    <div class="category-card">💻 Laptops</div>
+    <div class="category-card">🎧 Headphones</div>
+    <div class="category-card">⌚ Smartwatches</div>
+  </div>
+</section>
+
+<section class="deals">
+  <h2 class="section-title">Top <span>Deals</span></h2>
+
+  <div class="deals-grid">
+    <div class="deal-card">
+      <h3>🔥 Laptop Fest</h3>
+      <p>Up to 30% off on laptops</p>
+    </div>
+
+    <div class="deal-card">
+      <h3>📱 Mobile Mania</h3>
+      <p>Best prices on smartphones</p>
+    </div>
+
+    <div class="deal-card">
+      <h3>🎧 Audio Sale</h3>
+      <p>Headphones starting ₹1,999</p>
+    </div>
+  </div>
+</section>
+
+<section class="brands">
+  <h2 class="section-title">Featured <span>Brands</span></h2>
+
+  <div class="brands-row">
+    <a href="brands/apple.html">
+  <img src="images/brands/apple.png" class="brand-logo" alt="Apple">
+</a>
+
+<a href="brands/samsung.html">
+  <img src="images/brands/samsung.png" class="brand-logo" alt="Samsung">
+</a>
+
+<a href="brands/hp.html">
+  <img src="images/brands/hp.png" class="brand-logo" alt="HP">
+</a>
+<a href="brands/lenovo.html">
+  <img src="images/brands/lenovo.png" class="brand-logo" alt="Lenovo">
+</a>
+
+<a href="brands/dell.html">
+  <img src="images/brands/dell.png" class="brand-logo" alt="Dell">
+</a>
+
+<a href="brands/sony.html">
+  <img src="images/brands/sony.png" class="brand-logo" alt="Sony">
+</a>
+
+  </div>
+</section>
+
+
+  <!-- 🛍️ PRODUCTS SECTION -->
+<section class="products"  id="products">
+  <h2 class="section-title">Featured <span>Electronics</span></h2>
+
+  <div class="product-grid">
+
+    <!-- Product Card -->
+    <div class="product-card">
+      <img src="images/phone.jpg" alt="Smartphone">
+      <h3>Smartphone X Pro</h3>
+      <p class="price">₹29,999</p>
+
+      <div class="qty-control">
+    <button class="qty-btn" onclick="changeQty(this, -1)">−</button>
+    <span class="qty-value">1</span>
+    <button class="qty-btn" onclick="changeQty(this, 1)">+</button>
+  </div>
+
+      <button class="add-cart" onclick="addToCart(this)">Add to Cart</button>
+
+    </div>
+
+    <div class="product-card">
+      <img src="images/laptop.jpg" alt="Laptop">
+      <h3>UltraBook Air</h3>
+      <p class="price">₹69,999</p>
+      <div class="qty-control">
+  <button class="qty-btn" onclick="changeQty(this, -1)">−</button>
+  <span class="qty-value">1</span>
+  <button class="qty-btn" onclick="changeQty(this, 1)">+</button>
+</div>
+
+      <button class="add-cart" onclick="addToCart(this)">Add to Cart</button>
+
+    </div>
+
+    <div class="product-card">
+      <img src="images/headphone.jpg" alt="Headphones">
+      <h3>Noise Cancelling Headphones</h3>
+      <p class="price">₹7,999</p>
+      <div class="qty-control">
+  <button class="qty-btn" onclick="changeQty(this, -1)">−</button>
+  <span class="qty-value">1</span>
+  <button class="qty-btn" onclick="changeQty(this, 1)">+</button>
+</div>
+
+      <button class="add-cart" onclick="addToCart(this)">Add to Cart</button>
+
+    </div>
+
+    <div class="product-card">
+      <img src="images/smartwatch.jpg" alt="Smartwatch">
+      <h3>Smartwatch Neo</h3>
+      <p class="price">₹4,999</p>
+      <div class="qty-control">
+  <button class="qty-btn" onclick="changeQty(this, -1)">−</button>
+  <span class="qty-value">1</span>
+  <button class="qty-btn" onclick="changeQty(this, 1)">+</button>
+</div>
+
+      <button class="add-cart" onclick="addToCart(this)">Add to Cart</button>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="trust">
+  <div class="trust-box">🚚 Fast Delivery</div>
+  <div class="trust-box">💳 Secure Payments</div>
+  <div class="trust-box">⭐ Trusted Brands</div>
+  <div class="trust-box">📞 24/7 Support</div>
+</section>
+
+<footer class="footer">
+  <p>© 2025 ElectroMart. All rights reserved.</p>
+</footer>
+
+
+  <!-- JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
