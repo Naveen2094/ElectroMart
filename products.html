@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Products | ElectroMart</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- 🔥 NAVBAR -->
+  <header class="navbar">
+    <div class="logo">⚡ Electro<span>Mart</span></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="cart.html">Cart <span id="cart-count">0</span></a>
+
+    </nav>
+  </header>
+
+  <!-- 🛍️ PRODUCTS PAGE -->
+  <section class="products">
+    <h2 class="section-title">All <span>Products</span></h2>
+
+    <!-- ✅ EMPTY CONTAINER ONLY -->
+    <div class="product-grid" id="product-grid"></div>
+  </section>
+
+  <!-- JS -->
+  <script src="js/main.js"></script>
+
+  <!-- 🔥 FETCH PRODUCTS FROM MYSQL -->
+  <script>
+    fetch("backend/get-products.php")
+      .then(res => res.json())
+      .then(products => {
+        const grid = document.getElementById("product-grid");
+        grid.innerHTML = "";
+
+        products.forEach(p => {
+          const div = document.createElement("div");
+          div.className = "product-card";
+
+          div.innerHTML = `
+            <img src="${p.image}" alt="${p.name}">
+            <h3>${p.name}</h3>
+            <p class="price">₹${p.price}</p>
+
+            <div class="qty-control">
+              <button class="qty-btn" onclick="changeQty(this, -1)">−</button>
+              <span class="qty-value">1</span>
+              <button class="qty-btn" onclick="changeQty(this, 1)">+</button>
+            </div>
+
+            <button class="add-cart" onclick="addToCart(this)">Add to Cart</button>
+          `;
+
+          grid.appendChild(div);
+        });
+      });
+  </script>
+
+</body>
+</html>
