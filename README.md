@@ -3,10 +3,6 @@
 ElectroMart is a modern electronics e-commerce web application designed for a seamless shopping experience. Users can browse the latest gadgets, manage their shopping carts, and place orders through a streamlined checkout process.
 
 
-
-[Image of e-commerce website architecture diagram]
-
-
 ## 🚀 Features
 
 * **Dynamic Product Catalog:** Products are fetched and displayed in real-time from a MySQL database.
